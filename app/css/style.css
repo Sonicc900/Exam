@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  padding: 0;
+  position: relative; }
+
+.header_back {
+  background-color: RGB(159 154 207);
+  height: 1070px;
+  width: 1601px; }
+  .header_back_menu {
+    margin-left: 245px;
+    display: flex; }
+  .header_back_logo {
+    width: 54px;
+    height: 72px;
+    padding-top: 35px; }
+  .header_back .menu {
+    display: flex;
+    justify-content: flex-end; }
+  .header_back .menu a {
+    color: black;
+    text-decoration: none;
+    font-size: 22px;
+    line-height: 18px;
+    display: block; }
