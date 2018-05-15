@@ -1,54 +1,90 @@
-@import url("https://fonts.googleapis.com/css?family=PT+Sans");
 body {
   margin: 0;
   padding: 0;
   position: relative; }
-
-header {
-  background-image: url("../img/DeathtoStock_Wired7.svg");
-  background-color: RGB(159 154 207);
-  height: 1070px;
-  width: 1601px;
-  position: relative; }
-  header .header_main {
-    margin-left: 245px;
-    margin-right: 245px; }
-    header .header_main_logo {
-      width: 54px;
-      height: 72px;
-      padding-top: 35px;
-      position: absolute; }
-    header .header_main_menu {
+  body header {
+    background-image: url("../img/DeathtoStock_Wired7.svg");
+    background-color: RGB(159 154 207);
+    height: 1070px;
+    width: 100%; }
+    body header .main {
+      margin-left: 245px;
+      margin-right: 245px; }
+      body header .main_logo {
+        width: 54px;
+        height: 72px;
+        padding-top: 35px;
+        position: absolute; }
+      body header .main_menu {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 57px;
+        margin-left: 758px; }
+      body header .main_menu a {
+        color: white;
+        text-decoration: none;
+        font-size: 22px;
+        line-height: 18px;
+        display: block;
+        padding-left: 30px; }
+    body header .Title {
       display: flex;
-      justify-content: flex-end;
-      padding-top: 57px;
-      margin-left: 758px; }
-    header .header_main_menu a {
-      color: white;
-      text-decoration: none;
-      font-size: 22px;
-      line-height: 18px;
-      display: block;
-      padding-left: 30px; }
-  header .header_Title {
+      justify-content: center;
+      flex-direction: column;
+      width: 950px;
+      height: 90px;
+      margin-top: 334px;
+      margin-left: 325px;
+      margin-right: 327px; }
+      body header .Title_big {
+        font-size: 62px;
+        line-height: 60px;
+        color: white;
+        font-weight: bold;
+        margin-bottom: -62px; }
+      body header .Title_small {
+        font-size: 30px;
+        color: white;
+        font-family: "P TSans";
+        font-style: italic;
+        text-align: center;
+        position: relative; }
+  body .about {
+    height: 800px;
+    width: 100%;
+    overflow: hidden;
+    background-color: RGB(235 235 235);
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 950px;
-    height: 90px;
-    margin-top: 334px;
-    margin-left: 325px;
-    margin-right: 327px; }
-    header .header_Title_big {
-      font-size: 62px;
-      line-height: 60px;
+    justify-content: space-between; }
+    body .about_pic {
+      background-image: url("../img/DeathtoStock_Wired8.svg");
+      background-color: RGB(159 154 207);
+      height: 550px;
+      width: 380px;
+      background-size: cover;
+      background-position-x: 10%;
+      margin-top: 130px;
+      margin-left: 215px;
+      margin-right: 120px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    body .about .pic_icon {
+      margin-top: 70px; }
+    body .about .pic_text {
+      margin-top: 40px;
       color: white;
-      font-weight: bold;
-      margin-bottom: -62px; }
-    header .header_Title_small {
-      font-size: 30px;
-      color: white;
-      font-family: "P TSans";
-      font-style: italic;
-      text-align: center;
-      position: relative; }
+      font-size: 36px;
+      line-height: 47px;
+      font-weight: bold; }
+    body .about_container {
+      height: 252px;
+      width: 624px;
+      margin-top: 202px; }
+    body .about .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      body .about .container_button {
+        width: 192px;
+        height: 50px; }
