@@ -104,70 +104,149 @@ body {
       margin-top: 202px;
       margin-right: 250px;
     }
-    .container{
+    .container {
       display: flex;
       flex-direction: column;
       align-items: center;
-      &_button{
+      &_button {
         width: 192px;
         height: 50px;
         margin-top: 50px;
-    }
+        border: 1px solid black;
+        background-image: none;
+        background: transparent;
+      }
     }
   }
-  .services{
+  .services {
     width: 100%;
     height: 800px;
-
     $widthService: 382px;
     $heightService: 400px;
-    $colorNotEven: RGB(219 219 219);
-    $colorEven: RGB(235 235 235);
+    $colorNotEven: RGB(219, 219, 219);
+    $colorEven: RGB(235, 235, 235);
     display: flex;
     flex-direction: row;
-     &_cont1{
-      display: flex;
-       flex-direction: column;
-       padding-left: 210px;
-     }
-    .cont1{
-      min-height: 382px ;
-      width: $widthService ;
-      &_graphic{
-      height: 50%;
-      width:$widthService;
-      background-color: $colorNotEven;
-
-      }
-      &_web{
-      height:  50%;
-      width: $widthService;
-      background-color: $colorEven;
-    }
-  }
-    &_cont2{
+    .TextCont {
       display: flex;
       flex-direction: column;
-      .cont2{
-        height: 382px ;
-        width: $widthService ;
-        &_seo{
+      align-items: center;
+      margin-top: 100px;
+    }
+    .textTittle {
+      font-size: 24px;
+      color: rgb(102, 95, 96);
+      font-family: "P TSans";
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+    }
+    .textTittle3 {
+      font-size: 36px;
+      color: rgb(254, 252, 253);
+      font-family: "Proxima Nova";
+      font-weight: bold;
+      text-align: center;
+    }
+    .textDesc {
+      width: 200px;
+      height: 90px;
+      font-size: 18px;
+      color: rgb(102, 95, 96);
+      font-family: "P TSans";
+      font-style: italic;
+      text-align: center;
+    }
+    .textDesc3 {
+      width: 352px;
+      height: 89px;
+      font-size: 18px;
+      color: rgb(254, 252, 253);
+      font-family: "P TSans";
+      font-style: italic;
+      text-align: center;
+      margin-top: 90px;
+    }
+    &_cont1 {
+      display: flex;
+      flex-direction: column;
+      padding-left: 210px;
+      .cont1 {
+        min-height: 400px;
+        width: $widthService;
+        &_graphic {
           height: 50%;
-          width:$widthService;
+          width: $widthService;
+          background-color: $colorNotEven;
+        }
+        &_web {
+          height: 50%;
+          width: $widthService;
           background-color: $colorEven;
         }
-        &_mobile{
-          height:  50%;
+      }
+    }
+    &_cont2 {
+      display: flex;
+      flex-direction: column;
+      min-height: 400px;
+      .cont2 {
+        height: 50%;
+        width: $widthService;
+        &_seo {
+          height: 50%;
+          width: $widthService;
+          background-color: $colorEven;
+        }
+        &_mobile {
+          height: 50%;
           width: $widthService;
           background-color: $colorNotEven;
         }
       }
     }
-    &_cont3{
-        width: $widthService;
-        height: 800px;
-          background-image: ('../img/unsplash_523ae1f5502d6_1.svg');
-          background-color: $back4small_obj;
+    &_cont3 {
+      width: $widthService;
+      height: 800px;
+      margin-right: 210px;
+      background-color: $back4small_obj;
+      background-image: url('../img/Mac.svg');
+      background-position: -475px;
+    }
+  }
+  .Recent-Works {
+    width: 100%;
+    height: 990px;
+    background-color: rgb(159, 154, 207);
+    background-image: url('../img/DeathtoStock_Wired3.svg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .Works {
+      &_head {
+        margin-top: 50px;
+        margin-bottom: 60px;
+        height: 150px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color:white;
+
+      }
+      &_slider {
+
+      }
+      &_button {
+        width: 192px;
+        height: 50px;
+        margin-top: 50px;
+        border: 1px solid white;
+        background-image: none;
+        background-color: rgb(254, 252, 253);
       }
     }
+  }
 }
+
+

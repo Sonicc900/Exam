@@ -89,43 +89,108 @@ body {
       body .about .container_button {
         width: 192px;
         height: 50px;
-        margin-top: 50px; }
+        margin-top: 50px;
+        border: 1px solid black;
+        background-image: none;
+        background: transparent; }
   body .services {
     width: 100%;
     height: 800px;
     display: flex;
     flex-direction: row; }
+    body .services .TextCont {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 100px; }
+    body .services .textTittle {
+      font-size: 24px;
+      color: #665f60;
+      font-family: "P TSans";
+      font-weight: bold;
+      display: flex;
+      justify-content: center; }
+    body .services .textTittle3 {
+      font-size: 36px;
+      color: #fefcfd;
+      font-family: "Proxima Nova";
+      font-weight: bold;
+      text-align: center; }
+    body .services .textDesc {
+      width: 200px;
+      height: 90px;
+      font-size: 18px;
+      color: #665f60;
+      font-family: "P TSans";
+      font-style: italic;
+      text-align: center; }
+    body .services .textDesc3 {
+      width: 352px;
+      height: 89px;
+      font-size: 18px;
+      color: #fefcfd;
+      font-family: "P TSans";
+      font-style: italic;
+      text-align: center;
+      margin-top: 90px; }
     body .services_cont1 {
       display: flex;
       flex-direction: column;
       padding-left: 210px; }
-    body .services .cont1 {
-      min-height: 382px;
-      width: 382px; }
-      body .services .cont1_graphic {
-        height: 50%;
-        width: 382px;
-        background-color: RGB(219 219 219); }
-      body .services .cont1_web {
-        height: 50%;
-        width: 382px;
-        background-color: RGB(235 235 235); }
+      body .services_cont1 .cont1 {
+        min-height: 400px;
+        width: 382px; }
+        body .services_cont1 .cont1_graphic {
+          height: 50%;
+          width: 382px;
+          background-color: RGB(219, 219, 219); }
+        body .services_cont1 .cont1_web {
+          height: 50%;
+          width: 382px;
+          background-color: RGB(235, 235, 235); }
     body .services_cont2 {
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      min-height: 400px; }
       body .services_cont2 .cont2 {
-        height: 382px;
+        height: 50%;
         width: 382px; }
         body .services_cont2 .cont2_seo {
           height: 50%;
           width: 382px;
-          background-color: RGB(235 235 235); }
+          background-color: RGB(235, 235, 235); }
         body .services_cont2 .cont2_mobile {
           height: 50%;
           width: 382px;
-          background-color: RGB(219 219 219); }
+          background-color: RGB(219, 219, 219); }
     body .services_cont3 {
       width: 382px;
       height: 800px;
-      background-image: "../img/unsplash_523ae1f5502d6_1.svg";
-      background-color: RGB(159 154 207); }
+      margin-right: 210px;
+      background-color: RGB(159 154 207);
+      background-image: url("../img/Mac.svg");
+      background-position: -475px; }
+  body .Recent-Works {
+    width: 100%;
+    height: 990px;
+    background-color: #9f9acf;
+    background-image: url("../img/DeathtoStock_Wired3.svg");
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    body .Recent-Works .Works_head {
+      margin-top: 50px;
+      margin-bottom: 60px;
+      height: 150px;
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: white; }
+    body .Recent-Works .Works_button {
+      width: 192px;
+      height: 50px;
+      margin-top: 50px;
+      border: 1px solid white;
+      background-image: none;
+      background-color: #fefcfd; }
