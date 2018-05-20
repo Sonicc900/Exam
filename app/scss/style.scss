@@ -6,6 +6,7 @@ body {
   padding: 0;
   position: relative;
 
+
   header {
     background-image: url('../img/DeathtoStock_Wired7.svg');
     background-color: $back4small_obj;
@@ -123,6 +124,7 @@ body {
     height: 800px;
     $widthService: 382px;
     $heightService: 400px;
+    background-color: rgba(235,235,235,0.5);
     $colorNotEven: RGB(219, 219, 219);
     $colorEven: RGB(235, 235, 235);
     display: flex;
@@ -235,7 +237,8 @@ body {
 
       }
       &_slider {
-
+        width: 730px;
+        height: 350px;
       }
       &_button {
         width: 192px;
@@ -246,6 +249,21 @@ body {
         background-color: rgb(254, 252, 253);
       }
     }
+  }
+#toTheTop {
+  width: 60px;
+  height: 60px;
+  background-color: #9f9acf;
+  background-color: transparent;
+  text-align:center;
+  position:fixed;
+  bottom:10px;
+  right:40px;
+  cursor:pointer;
+}
+  .toTop{
+    width: 45px;
+    height: 45px;
   }
 }
 

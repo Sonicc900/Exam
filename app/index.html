@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <link rel="shortcut icon" href="img/Favicon1.jpg" type="image/jpg">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -17,10 +19,10 @@
             </div>
             <nav class="main_menu">
                 <a href="#">HOME</a>
-                <a href="#">ABOUT</a>
-                <a href="#">SERVICE</a>
-                <a href="#">WORKS</a>
-                <a href="#">CONTACT</a>
+                <a href="#about">ABOUT</a>
+                <a href="#services">SERVICE</a>
+                <a href="#works">WORKS</a>
+                <a href="#contact">CONTACT</a>
             </nav>
         </div>
         <div class="Title">
@@ -29,6 +31,7 @@
         </div>
     </header>
     <section class="about">
+        <p><a name="about"></a></p>
         <div class="about_pic pic">
             <img src="img/Icon-AboutUs.svg" alt="men" class="pic_icon">
             <div class="pic_text"> <p>ABOUT US</p>
@@ -36,7 +39,6 @@
             </div>
         </div>
         <div class="about_container container ">
-
             <p>Nullam quis risus eget urna <b>mollis ornare</b> vel eu leo.
                 Donec id elit non mi <br>porta gravida at eget metus. Donec ullamcorper nulla non metus auctor
                 <br>fringilla. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
@@ -45,13 +47,12 @@
                 sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu
                leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit
                 <br>amet <em>fermentum</em>. Sed posuere consectetur est at lobortis.</p>
-
-
             <button class="container_button"><p>Learn More</p></button>
 
         </div>
     </section>
     <section class="services">
+        <p><a name="services"></a></p>
         <div class="services_cont1 cont1 ">
 
             <div class="cont1_graphic">
@@ -95,16 +96,29 @@
         </div>
     </section>
     <section class="Recent-Works Works">
+        <p><a name="works"></a></p>
             <div class="Works_head">
                 <img src="img/Icon-Works.svg" alt="">
                 <h1>RECENT WORKS</h1>
             </div>
             <div class="Works_slider">
-
+                <img src="img/first.png" alt="">
+                <img src="img/second.png" alt="">
+                <img src="img/third.png" alt="">
+                <img src="img/4th.png" alt="">
             </div>
             <button class="Works_button"><p>View Gallery</p>
 
             </button>
     </section>
+    <div id = "toTheTop" >
+        <img src="img/ToTheTop.svg" class="toTop" alt="">
+    </div >
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="script.js"></script>
+
 </body>
 </html>
