@@ -191,6 +191,16 @@ body {
     body .Recent-Works .Works_slider {
       width: 730px;
       height: 350px; }
+      body .Recent-Works .Works_slider .slick-prev::before {
+        content: url("../img/interface - arrow left.svg");
+        right: 125px;
+        position: absolute;
+        top: -30px; }
+      body .Recent-Works .Works_slider .slick-next::before {
+        content: url("../img/interface - arrow right.svg");
+        left: 125px;
+        top: -30px;
+        position: absolute; }
     body .Recent-Works .Works_button {
       width: 192px;
       height: 50px;
@@ -208,6 +218,36 @@ body {
     bottom: 10px;
     right: 40px;
     cursor: pointer; }
+  body .Team {
+    height: 820px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ebebeb; }
+    body .Team_head {
+      margin-top: 60px;
+      margin-bottom: 60px;
+      height: 150px;
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #665f60; }
+    body .Team_slider .slider_team {
+      width: 345px;
+      height: 480px;
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+      body .Team_slider .slider_team_img {
+        width: 239px;
+        height: 228px;
+        border-radius: 118px;
+        background-color: #ebebeb;
+        border: 3px solid #ebebeb;
+        text-align: center;
+        background-position: -19px -6px; }
   body .toTop {
     width: 45px;
     height: 45px; }

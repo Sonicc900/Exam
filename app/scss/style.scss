@@ -6,7 +6,6 @@ body {
   padding: 0;
   position: relative;
 
-
   header {
     background-image: url('../img/DeathtoStock_Wired7.svg');
     background-color: $back4small_obj;
@@ -124,7 +123,7 @@ body {
     height: 800px;
     $widthService: 382px;
     $heightService: 400px;
-    background-color: rgba(235,235,235,0.5);
+    background-color: rgba(235, 235, 235, 0.5);
     $colorNotEven: RGB(219, 219, 219);
     $colorEven: RGB(235, 235, 235);
     display: flex;
@@ -233,12 +232,24 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        color:white;
+        color: white;
 
       }
       &_slider {
         width: 730px;
         height: 350px;
+        .slick-prev::before {
+          content: url("../img/interface - arrow left.svg");
+          right: 125px;
+          position: absolute;
+          top: -30px;
+        }
+        .slick-next::before {
+          content: url("../img/interface - arrow right.svg");
+          left: 125px;
+          top: -30px;
+          position: absolute;
+        }
       }
       &_button {
         width: 192px;
@@ -250,18 +261,64 @@ body {
       }
     }
   }
-#toTheTop {
-  width: 60px;
-  height: 60px;
-  background-color: #9f9acf;
-  background-color: transparent;
-  text-align:center;
-  position:fixed;
-  bottom:10px;
-  right:40px;
-  cursor:pointer;
-}
-  .toTop{
+  #toTheTop {
+    width: 60px;
+    height: 60px;
+    background-color: #9f9acf;
+    background-color: transparent;
+    text-align: center;
+    position: fixed;
+    bottom: 10px;
+    right: 40px;
+    cursor: pointer;
+  }
+  .Team {
+    height: 820px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(235, 235, 235);
+    &_head {
+      margin-top: 60px;
+      margin-bottom: 60px;
+      height: 150px;
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: rgb(102, 95, 96);
+    }
+    &_slider {
+      .slider {
+        &_team {
+          width: 345px;
+          height: 480px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          &_img {
+            width: 239px;
+            height: 228px;
+            border-radius: 118px;
+            background-color: #ebebeb;
+            border: 3px solid #ebebeb;
+            text-align: center;
+            background-position: -19px -6px;
+
+          }
+          &_info {
+
+          }
+
+          &_web {
+
+          }
+        }
+       }
+      }
+    }
+  .toTop {
     width: 45px;
     height: 45px;
   }
