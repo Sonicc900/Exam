@@ -16,8 +16,12 @@ body {
         padding-top: 35px;
         position: absolute; }
       body header .main_menu {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: flex-end;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
         padding-top: 57px;
         margin-left: 758px; }
       body header .main_menu a {
@@ -28,9 +32,16 @@ body {
         display: block;
         padding-left: 30px; }
     body header .Title {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: center;
-      flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
       width: 950px;
       height: 90px;
       margin-top: 334px;
@@ -54,21 +65,32 @@ body {
     width: 100%;
     overflow: hidden;
     background-color: RGB(235 235 235);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between; }
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
     body .about_pic {
       background-image: url("../img/DeathtoStock_Wired8.svg");
       background-color: RGB(159 154 207);
       height: 550px;
-      width: 380px;
+      min-width: 31%;
       background-size: cover;
-      background-position-x: 10%;
       margin-top: 130px;
-      margin-left: 215px;
-      margin-right: 120px;
+      margin-left: 18%;
+      margin-right: 10%;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
-      align-items: center; }
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      background-position: -183px; }
     body .about .pic_icon {
       margin-top: 70px; }
     body .about .pic_text {
@@ -79,16 +101,23 @@ body {
       font-weight: bold; }
     body .about_container {
       height: 350px;
-      width: 633px;
+      width: 52%;
       margin-top: 202px;
-      margin-right: 250px; }
+      margin-right: 21%; }
     body .about .container {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
-      align-items: center; }
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
       body .about .container_button {
-        width: 192px;
-        height: 50px;
+        min-width: 16%;
+        min-height: 50px;
         margin-top: 50px;
         border: 1px solid black;
         background-image: none;
@@ -97,20 +126,36 @@ body {
     width: 100%;
     height: 800px;
     background-color: rgba(235, 235, 235, 0.5);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row; }
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
     body .services .TextCont {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
-      align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       margin-top: 100px; }
     body .services .textTittle {
       font-size: 24px;
       color: #665f60;
       font-family: "P TSans";
       font-weight: bold;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: center; }
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
     body .services .textTittle3 {
       font-size: 36px;
       color: #fefcfd;
@@ -118,7 +163,7 @@ body {
       font-weight: bold;
       text-align: center; }
     body .services .textDesc {
-      width: 200px;
+      width: 60%;
       height: 90px;
       font-size: 18px;
       color: #665f60;
@@ -126,7 +171,7 @@ body {
       font-style: italic;
       text-align: center; }
     body .services .textDesc3 {
-      width: 352px;
+      width: 80%;
       height: 89px;
       font-size: 18px;
       color: #fefcfd;
@@ -135,39 +180,49 @@ body {
       text-align: center;
       margin-top: 90px; }
     body .services_cont1 {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
       padding-left: 210px; }
       body .services_cont1 .cont1 {
         min-height: 400px;
-        width: 382px; }
+        min-width: 382px; }
         body .services_cont1 .cont1_graphic {
           height: 50%;
-          width: 382px;
+          min-width: 382px;
           background-color: RGB(219, 219, 219); }
         body .services_cont1 .cont1_web {
           height: 50%;
-          width: 382px;
+          min-width: 382px;
           background-color: RGB(235, 235, 235); }
     body .services_cont2 {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
-      min-height: 400px; }
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      min-height: 33%; }
       body .services_cont2 .cont2 {
         height: 50%;
-        width: 382px; }
+        min-width: 382px; }
         body .services_cont2 .cont2_seo {
           height: 50%;
-          width: 382px;
+          min-width: 382px;
           background-color: RGB(235, 235, 235); }
         body .services_cont2 .cont2_mobile {
           height: 50%;
-          width: 382px;
+          min-width: 382px;
           background-color: RGB(219, 219, 219); }
     body .services_cont3 {
-      width: 382px;
+      min-width: 382px;
       height: 800px;
-      margin-right: 210px;
+      margin-right: 40%;
       background-color: RGB(159 154 207);
       background-image: url("../img/Mac.svg");
       background-position: -475px; }
@@ -176,20 +231,34 @@ body {
     height: 990px;
     background-color: #9f9acf;
     background-image: url("../img/DeathtoStock_Wired3.svg");
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
     body .Recent-Works .Works_head {
       margin-top: 50px;
       margin-bottom: 60px;
       height: 150px;
-      width: 300px;
+      width: 25%;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
-      align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       color: white; }
     body .Recent-Works .Works_slider {
-      width: 730px;
+      width: 60%;
       height: 350px; }
       body .Recent-Works .Works_slider .slick-prev::before {
         content: url("../img/interface - arrow left.svg");
@@ -198,56 +267,111 @@ body {
         top: -30px; }
       body .Recent-Works .Works_slider .slick-next::before {
         content: url("../img/interface - arrow right.svg");
-        left: 125px;
+        left: 10%;
         top: -30px;
         position: absolute; }
     body .Recent-Works .Works_button {
-      width: 192px;
+      width: 16%;
       height: 50px;
       margin-top: 50px;
       border: 1px solid white;
       background-image: none;
       background-color: #fefcfd; }
+  body .Team {
+    height: 820px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #ebebeb; }
+    body .Team_head {
+      margin-top: 60px;
+      margin-bottom: 60px;
+      height: 150px;
+      width: 25%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      color: #665f60; }
+    body .Team_slider .slider {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      text-align: center; }
+      body .Team_slider .slider_wrap {
+        width: 352px;
+        height: 480px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        background-color: #fff; }
+        body .Team_slider .slider_wrap .wrap_img {
+          position: relative;
+          min-width: 252px;
+          height: 228px;
+          border-radius: 118px;
+          background-color: #ebebeb;
+          border: 3px solid #ebebeb;
+          text-align: center;
+          background-position: -19px -6px; }
+        body .Team_slider .slider_wrap .wrap_info {
+          height: 391px;
+          min-width: 352px;
+          padding-top: 40px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          text-align: center; }
+        body .Team_slider .slider_wrap .wrap_web {
+          min-width: 352px;
+          min-height: 71px;
+          background-color: #9f9acf;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          text-align: center; }
   body #toTheTop {
-    width: 60px;
+    width: 5%;
     height: 60px;
     background-color: #9f9acf;
     background-color: transparent;
     text-align: center;
     position: fixed;
     bottom: 10px;
-    right: 40px;
+    right: 3%;
     cursor: pointer; }
-  body .Team {
-    height: 820px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #ebebeb; }
-    body .Team_head {
-      margin-top: 60px;
-      margin-bottom: 60px;
-      height: 150px;
-      width: 300px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      color: #665f60; }
-    body .Team_slider .slider_team {
-      width: 345px;
-      height: 480px;
-      display: flex;
-      flex-direction: row;
-      align-items: center; }
-      body .Team_slider .slider_team_img {
-        width: 239px;
-        height: 228px;
-        border-radius: 118px;
-        background-color: #ebebeb;
-        border: 3px solid #ebebeb;
-        text-align: center;
-        background-position: -19px -6px; }
+  body #map {
+    height: 400px;
+    width: 100%; }
   body .toTop {
     width: 45px;
     height: 45px; }
