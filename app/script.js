@@ -1,10 +1,13 @@
 $('.Works_slider').slick({
         dots: true,
-        margin: 100,
         adaptiveHeight: true
     }
 );
 
+$('.team__slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1
+});
 $(function () {
     $(window).scroll(function () {
         if ($(this).scrollTop() != 0) {
